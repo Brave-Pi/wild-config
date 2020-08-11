@@ -56,7 +56,7 @@ let loadConfig = skipEvent => {
                     throw new Error(file + ' is not a file');
                 }
             });
-            res = '__include_file_path_' + ++c + '=' + JSON.stringify(files);
+            res = '\n__include_file_path_' + ++c + '=' + JSON.stringify(files);
 
             return res;
         });
